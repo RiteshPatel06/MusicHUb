@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="output.css">
+    <link rel="stylesheet" href="input.css">
+</head>
+
+<body style="background-color: #080808; color: white;">
+    <section>
+        <div class="flex justify-between m-3">
+            <div class="flex gap-2  items-center ">
+                <button id="backBtn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="icon text-red-600 icon-tabler icons-tabler-outline icon-tabler-arrow-narrow-left-dashed">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path d="M5 12h6m3 0h1.5m3 0h.5" />
+                        <path d="M5 12l4 4" />
+                        <path d="M5 12l4 -4" />
+                    </svg>
+                </button>
+                <p class="text-2xl font-bold">Song<span class="text-red-600">Details</span></p>
+            </div>
+            <div class="flex gap-2  items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="icon  text-red-600  icon-tabler icons-tabler-outline icon-tabler-heart">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M19.5 12.572l-7.5 7.428l-7.5 -7.428a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="icon text-red-600 icon-tabler icons-tabler-outline icon-tabler-dots-vertical">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M11 12a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" />
+                    <path d="M11 19a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" />
+                    <path d="M11 5a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" />
+                </svg>
+
+            </div>
+
+        </div>
+        <div class="border-b border-zinc-500 "></div>
+        <section class=" mt-10 gap-3 flex flex-col items-center justify-center">
+            <div>
+                <div>
+                    <img id="songArtwork" width="200" class="items-center rounded-md"
+                        src="https://c.saavncdn.com/461/LoFi-Songs-Hindi-2023-20231004122551-500x500.jpg" alt="">
+                </div>
+            </div>
+            <div>
+                <h1 id="songTitle" class="font-bold flex  text-2xl ">Daku (Slow Reverb)</h1>
+                <p id="songArtist" class="flex  justify-center">IAmRootUser</p>
+                <div class=" p-2 flex justify-center gap-3">
+                    <p>Slow Reverb</p>
+                    <p>Lofi</p>
+                    <p>Punjabi</p>
+                </div>
+                <div class="flex gap-3 justify-center">
+                    <div class="flex">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="icon icon-tabler icons-tabler-outline icon-tabler-player-play">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path d="M7 4v16l13 -8l-13 -8" />
+                        </svg>
+                        <p>1.2M Plays</p>
+                    </div>
+                    <div class="flex">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="icon  icon-tabler icons-tabler-outline icon-tabler-heart">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path d="M19.5 12.572l-7.5 7.428l-7.5 -7.428a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572" />
+                        </svg>
+                        <p>Likes</p>
+                    </div>
+                    <div class="flex gap-1.5">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="icon icon-tabler icons-tabler-outline icon-tabler-calendar-dot">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path d="M12.5 21h-6.5a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v5" />
+                            <path d="M16 3v4" />
+                            <path d="M8 3v4" />
+                            <path d="M4 11h16" />
+                            <path d="M16 19a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+                        </svg>
+                        <p>2023</p>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </section>
+        <section class="p-4">
+            <div class="flex justify-between p-3">
+                <button id="siffleBtn">
+                    <svg class="text-red-600" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="icon icon-tabler icons-tabler-outline icon-tabler-arrows-shuffle">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path d="M18 4l3 3l-3 3" />
+                        <path d="M18 20l3 -3l-3 -3" />
+                        <path d="M3 7h3a5 5 0 0 1 5 5a5 5 0 0 0 5 5h5" />
+                        <path d="M21 7h-5a4.978 4.978 0 0 0 -3 1m-4 8a4.984 4.984 0 0 1 -3 1h-3" />
+                    </svg>
+                </button>
+                <button id="previusBtn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="icon icon-tabler icons-tabler-outline icon-tabler-player-skip-back">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path d="M20 5v14l-12 -7l12 -7" />
+                        <path d="M4 5l0 14" />
+                    </svg>
+                </button>
+                <button id="playPauseBtn">
+                    <svg class="" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-player-pause">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path d="M6 6a1 1 0 0 1 1 -1h2a1 1 0 0 1 1 1v12a1 1 0 0 1 -1 1h-2a1 1 0 0 1 -1 -1l0 -12" />
+                        <path d="M14 6a1 1 0 0 1 1 -1h2a1 1 0 0 1 1 1v12a1 1 0 0 1 -1 1h-2a1 1 0 0 1 -1 -1l0 -12" />
+                    </svg>
+                </button>
+                <button id="nextBtn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="icon icon-tabler icons-tabler-outline icon-tabler-player-skip-forward">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path d="M4 5v14l12 -7l-12 -7" />
+                        <path d="M20 5l0 14" />
+                    </svg>
+                </button>
+                <button id="repetBtn">
+                    <svg class="text-red-600" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-repeat">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path d="M4 12v-3a3 3 0 0 1 3 -3h13m-3 -3l3 3l-3 3" />
+                        <path d="M20 12v3a3 3 0 0 1 -3 3h-13m3 3l-3 -3l3 -3" />
+                    </svg>
+
+                </button>
+            </div>
+
+            <div class="flex items-center gap-3">
+
+                <span id="currentTime">0:00</span>
+
+                <input type="range" id="progressBar" min="0" max="100" value="0" class="w-full accent-red-500">
+
+                <span id="duration">0:00</span>
+            </div>
+        </section>
+
+        <section>
+            <button id="downloadBtn" class="bg-red-600 hidden text-white p-2 rounded-lg flex items-center m-3 gap-2">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 15v4a2 2 0 0 1 -2 2H5a2 2 0 0 1 -2 -2v-4" />
+                    <path d="M7 10l5 5l5 -5" />
+                    <path d="M12 15V3" />
+                </svg>
+                <p class="font-bold">Download song</p>
+            </button>
+        </section>
+        <section class="p-3">
+
+
+            <section id="tags" class="border rounded-lg border-white/40  p-4 m-3">
+                <h2 class="text-xl font-semibold mb-3">About This Track</h2>
+                <p id="trackDescription" class="text-gray-400 leading-relaxed">
+                    No description available.
+                </p>
+            </section>
+
+
+
+            <section id="tags" class="border  border-white/40 rounded-xl p-4 m-3">
+                <h2 class="text-xl font-semibold mb-3">Tags</h2>
+                <div id="trackTags" class="flex flex-wrap gap-2">
+                    <p class="text-gray-400">No tags available.</p>
+                </div>
+            </section>
+
+            </div>
+        </section>
+
+
+    </section>
+    <script src="songDetails.js"></script>
+</body>
+
+</html>

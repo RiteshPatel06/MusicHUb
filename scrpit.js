@@ -48,19 +48,23 @@ async function searchSongs(songName) {
 
 }
 function displaySongs(songs) {
+
     songContainer.innerHTML = ""
-    if(!songs || songs.length === 0){
+    if (!songs || songs.length === 0) {
         songContainer.innerHTML = `<p class="text-center text-gray-400 text-xl mt-8">song not found</p>`
         return
     }
     songs.forEach((song) => {
+        console.log("Song object:", song);
+        console.log("Song ID:", song.id);
+        console.log("Track ID:", song.track_id);
         const div = document.createElement("div")
         div.classList.add("flex", "flex-col")
         div.innerHTML = `
         <div class="flex justify-between border border-white/30 rounded-md m-3">
                 <img width="60" height="60" src=${song.artwork["480x480"]} alt="">
                 <div class=" song-title-box flex flex-col items-center">
-                    <p>${song.title}</p>
+                    <p class = "song-title cursor-pointer">${song.title}</p>
                     <p>${song.user.handle}</p>
                 </div>
                 <div class="flex items-center">
@@ -76,6 +80,28 @@ function displaySongs(songs) {
             
         `
         songContainer.append(div)
+        const songTitle = div.querySelector(".song-title");
+
+        songTitle.addEventListener("click", () => {
+            const playlist = songs.map((item) => ({
+                id: item.id,
+                title: item.title,
+                artist: item.user?.handle || "Unknown Artist",
+                artwork: item.artwork?.["480x480"] || "",
+                description : item.description || "",
+                tags:item.tags || ""
+            }));
+            const params = new URLSearchParams({
+                title: song.title,
+                artist: song.user?.handle || "Unknown Artst",
+                artwork: song.artwork?.["480x480"] || "",
+                id: song.id || "",
+                playlist: JSON.stringify(playlist),
+                index: songs.findIndex(item => item.id === song.id)
+            });
+            window.location.href = `songDetails.html?${params.toString()}`;
+        });
+
         const playBtn = div.querySelector(".playBtn")
         playBtn.addEventListener("click", () => {
             currentSong.textContent = song.title
@@ -90,9 +116,5 @@ function displaySongs(songs) {
         pauseBtn.addEventListener("click", () => {
             audio.pause()
         })
-
-
-
-    })
-
+    })   
 }

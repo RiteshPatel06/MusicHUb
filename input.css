@@ -1,1 +1,14 @@
 @import "tailwindcss";
+
+#tags {
+    background-color:#262626;
+    border-radius: 20px;
+}
+#songTitle {
+    width: 100%;
+    max-width: 100%;
+    overflow-wrap: anywhere;
+    white-space: normal;
+    text-align: center;
+    padding: 20px;
+}
